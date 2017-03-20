@@ -1,0 +1,87 @@
+// min width breakpoint
+
+@mixin bp($break) {
+	@media screen and (min-width:$break) {
+		@content;
+	}
+}
+
+
+// Max width breakpoint
+
+@mixin bp-max($break) {
+  @media screen and (max-width: $break) {
+  	@content;
+	}
+}
+
+
+// Clear fix
+
+@mixin clearfix {
+  &::after,
+	&::before {
+    clear: both;
+		content: '';
+		display: table;
+		height: 0;
+	}
+}
+
+
+// Gradient
+
+@mixin linear-gradient($fallback, $direction, $colorstops...) {
+	background: linear-gradient($direction, $colorstops...);
+	background-color: $fallback;
+}
+
+// Placewholder
+
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder {
+	   color: $color;
+	}
+	&::-moz-placeholder {
+	   color: $color;
+	}
+	&:-ms-input-placeholder {
+	   color: $color;
+	}
+}
+
+// Flex
+
+@mixin flex-property($property, $value) {
+	-ms-#{$property}: $value;
+	-webkit-#{$property}: $value;
+	#{$property}: $value;
+}
+
+// Accessability
+
+@mixin wai {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+// vertically align
+
+@mixin vert-and-center-align {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin vert-align {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}

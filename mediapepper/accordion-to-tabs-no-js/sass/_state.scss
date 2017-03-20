@@ -1,0 +1,16 @@
+//
+// Tabs
+//
+
+// Clicked state
+
+.tabs {
+  &__input[type="radio"]:checked + &__label,
+  &__input--ie9[type="radio"]:checked + &__label {
+    background: none;
+    color: $color-secondary;
+  }
+  &__input[type="radio"]:checked + &__label + &__tab {
+    display: block;
+  }
+}

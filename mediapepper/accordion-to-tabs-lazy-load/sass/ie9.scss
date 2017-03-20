@@ -1,0 +1,15 @@
+@import  'components/variables', 'components/functions', 'components/mixins', 'components/extends';
+
+
+.tabs {
+  &__label {
+    @include bp($m) {
+      display: none !important;
+    }
+  }
+  &__label--ie9 {
+    @include bp-max($m) {
+      display: none !important;
+    }
+  }
+}

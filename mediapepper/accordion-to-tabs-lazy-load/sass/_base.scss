@@ -1,0 +1,14 @@
+@import 'components/normalize', 'components/variables', 'components/functions', 'components/mixins', 'components/extends', 'components/common-classes', 'components/fonts';
+
+//
+// Base
+//
+
+h1,
+h2 {
+	margin: 0 0 1em;
+}
+
+img {
+    max-width: 100%;
+}

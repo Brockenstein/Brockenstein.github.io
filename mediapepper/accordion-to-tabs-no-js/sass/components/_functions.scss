@@ -1,0 +1,9 @@
+// PX to REM
+@function px($target) {
+  @return #{$target / 16}rem
+};
+
+// PX to VW
+@function vw($font-size, $resolution) {
+  @return #{$font-size / ($resolution * .01)}vw
+};
