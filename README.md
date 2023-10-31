@@ -3,3 +3,5 @@
 
 * [Flexspan Grid System](/Flexspan-Grid-System/)
   * [Examples](/Flexspan-Grid-System/examples.html)
+
+[Blog](https://brockbarnett.me/)
